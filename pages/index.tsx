@@ -1,8 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import Head from 'next/head';
+import { Roboto } from '@next/font/google';
+import { Navbar } from '../components';
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: ['100', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+})
 
 export default function Home() {
   return (
@@ -13,7 +17,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-red-500 font-black">Michael Aitken</h1>
+      <main>
+        <div className='absolute gradient-01 w-[1278px] h-[805.54px] -z-10 rotate-[40deg] top-[-20%] right-[2%]' />
+        <Navbar />
+
+        {/* Hero */}
+
+        {/* About */}
+
+        {/* Projects */}
+
+        {/* Skills */}
+
+        {/* Contact Me */}
+      </main>
     </>
   )
 }
