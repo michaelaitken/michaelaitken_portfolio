@@ -1,12 +1,5 @@
 import Head from 'next/head';
-import { Roboto } from '@next/font/google';
-import { Navbar } from '../components';
-
-const roboto = Roboto({
-  weight: ['100', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-})
+import { Navbar, Hero } from '../components';
 
 export default function Home() {
   return (
@@ -18,11 +11,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='absolute gradient-01 w-[1278px] h-[805.54px] -z-10 rotate-[40deg] top-[-20%] right-[2%]' />
+        <div className='absolute -z-10 top-[-20%] left-[-10%] md:left-[30%] xl:left-[40%] h-[1278px] '>
+          <div className=' gradient-01 w-[1278px] h-[805.54px] rotate-[40deg]' />
+        </div>
         <Navbar />
-
-        {/* Hero */}
-
+        <Hero />
+        <div className='absolute -z-10 bottom-[-35%] right-[5%] md:right-[40%] xl:right-[50%] h-[1278px] '>
+          <div className=' gradient-02 w-[1278px] h-[805.54px] rotate-[18deg] mt-[200px]' />
+        </div>
         {/* About */}
 
         {/* Projects */}
