@@ -17,8 +17,8 @@ module.exports = {
           '100%': { opacity: 1, transform: 'translateY(0em)'},
         },
         fadeLeft: {
-          '0%': { opacity: 0, transform: 'translateX(3em)' },
-          '100%': { opacity: 1, transform: 'translateX(0em)'},
+          '0%': { opacity: 0, transform: 'translateX(-3em)' },
+          '100%': { opacity: 1, transform: 'translateX(0)'},
         },
         scaling: {
           '0%, 100%': { transform: 'scale(1)' },
@@ -29,7 +29,7 @@ module.exports = {
       animation: {
         heroTitleAnimation: 'fadeUp 1.5s cubic-bezier(.12,.72,.5,1.2)',
         navbarAnimation: 'fadeDown 1s ease-out',
-        heroSocialAnimation: 'fadeLeft 0.75 cubic-bezier(.12,.72,.5,1.2)',
+        heroSocialAnimation: 'fadeLeft 1s cubic-bezier(.12,.72,.5,1.2)',
         breathing: 'scaling 10s ease-in-out infinite'
       },
     },
