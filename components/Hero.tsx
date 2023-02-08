@@ -36,16 +36,16 @@ const Hero = ({}: Props) => {
 ];
 
   return (
-    <div className='flex flex-col justify-between items-center'>
-      <div className='flex flex-col justify-center items-center w-[100vw] h-[80vh] -mt-[80px]'>
+    <div className='flex flex-col justify-between items-center h-[87vh]'>
+      <div className='flex flex-col justify-center items-center w-[100vw] mt-[20vh]'>
         <div className='flex flex-col xl:flex-row items-center'>
-          <h1 className={`text-[90px] leading-[90px] md:text-[210px] md:leading-[210px] lg:text-[230px] lg:leading-[230px] text-white font-semibold uppercase ${robotoCondensed.className} xl:mr-[80px] animate-h1Animation`}>michael</h1>
-          <h1 className={`text-[90px] leading-[90px] md:text-[210px] md:leading-[210px] lg:text-[230px] lg:leading-[230px] text-white font-semibold uppercase ${robotoCondensed.className} animate-h1Animation`}>aitken</h1>
+          <h1 className={`text-[90px] leading-[90px] md:text-[210px] md:leading-[210px] lg:text-[230px] lg:leading-[230px] text-white font-semibold uppercase ${robotoCondensed.className} xl:mr-[80px] animate-heroTitleAnimation`}>michael</h1>
+          <h1 className={`text-[90px] leading-[90px] md:text-[210px] md:leading-[210px] lg:text-[230px] lg:leading-[230px] text-white font-semibold uppercase ${robotoCondensed.className} animate-heroTitleAnimation`}>aitken</h1>
         </div>
         <p className={`text-[18px] md:text-[28px] lg:text-[32px] text-[#FF8A00] font-semibold uppercase md:-mt-1 ${roboto.className}`}>software developer</p>
       </div>
       <div className='flex justify-between absolute w-[100vw] bottom-10 z-10 max-w-[1920px]'>
-        <div className='w-[40px] sm:w-[160px]'/>
+        <div className='w-[80px] sm:w-[160px]'/>
         <div className='flex justify-end'>
           <a href='#projects'>
             <Image src={downArrow} alt="arrow" className='object-contain animate-bounce' />

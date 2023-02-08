@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Navbar, Hero } from '../components';
+import { Navbar, Hero, Project } from '../components';
 
 export default function Home() {
   return (
@@ -11,14 +11,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='absolute -z-10 top-[-20%] left-[-10%] md:left-[30%] xl:left-[40%] h-[1278px] '>
+        <div className='absolute -z-10 top-[-20%] left-[-10%] md:left-[30%] xl:left-[40%] h-[1278px] animate-breathing'>
           <div className=' gradient-01 w-[1278px] h-[805.54px] rotate-[40deg]' />
         </div>
-        <Navbar />
-        <Hero />
-        <div className='absolute -z-10 bottom-[-35%] right-[5%] md:right-[40%] xl:right-[50%] h-[1278px] '>
+        <section id='hero'>
+          <Navbar />
+          <Hero />
+        </section>
+        <div className='absolute -z-10 bottom-[-35%] right-[5%] md:right-[40%] xl:right-[50%] h-[1278px] animate-breathing'>
           <div className=' gradient-02 w-[1278px] h-[805.54px] rotate-[18deg] mt-[200px]' />
         </div>
+        <section id='projects'>
+          <Project />
+        </section>
         {/* About */}
 
         {/* Projects */}

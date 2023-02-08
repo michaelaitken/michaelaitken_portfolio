@@ -12,15 +12,25 @@ module.exports = {
           '0%': { opacity: 0, transform: 'translateY(1em)' },
           '100%': { opacity: 1, transform: 'translateY(0em)'},
         },
+        fadeDown: {
+          '0%': { opacity: 0, transform: 'translateY(-3em)' },
+          '100%': { opacity: 1, transform: 'translateY(0em)'},
+        },
         fadeLeft: {
           '0%': { opacity: 0, transform: 'translateX(3em)' },
           '100%': { opacity: 1, transform: 'translateX(0em)'},
         },
+        scaling: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.3)' },
+        },
 
       },
       animation: {
-        h1Animation: 'fadeUp 0.75s cubic-bezier(.12,.72,.5,1.2)',
-        linksAnimation: 'fadeLeft 0.75s cubic-bezier(.12,.72,.5,1.2)',
+        heroTitleAnimation: 'fadeUp 1.5s cubic-bezier(.12,.72,.5,1.2)',
+        navbarAnimation: 'fadeDown 1s ease-out',
+        heroSocialAnimation: 'fadeLeft 0.75 cubic-bezier(.12,.72,.5,1.2)',
+        breathing: 'scaling 10s ease-in-out infinite'
       },
     },
   },

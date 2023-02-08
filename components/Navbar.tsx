@@ -25,10 +25,10 @@ export default function Navbar({}: Props) {
         <nav className={roboto.className}>
             {/* Navbar for normal screen size ${(0.75+(i*0.5)).toString} */}
             <div className="flex justify-between items-center max-w-[2000px] mx-auto">
-                <div className="ml-[60px] lg:ml-[100px] mt-[50px]">
+                <div className="ml-[60px] lg:ml-[100px] mt-[50px] animate-navbarAnimation">
                     <Image className="w-[100px] h-[100px] object-contain" src={logo} alt="logo"/>
                 </div>
-                <div className="z-10">
+                <div className="z-10 animate-navbarAnimation">
                     <ul className="hidden lg:flex flex-row text-white text-[32px] mr-[90px]"> 
                         {links.map((link, i) => (
                             <li 
@@ -42,7 +42,7 @@ export default function Navbar({}: Props) {
                 </div>
 
                 {/* Navbar Menu for Mobile */}
-                <div className="relative flex lg:hidden justify-end">
+                <div className="relative flex lg:hidden justify-end animate-navbarAnimation">
                     <button 
                         className="mt-[50px] mr-[60px] z-50"
                         onClick={handleToggle}
