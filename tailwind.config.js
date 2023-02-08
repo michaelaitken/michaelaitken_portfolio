@@ -17,7 +17,7 @@ module.exports = {
           '100%': { opacity: 1, transform: 'translateY(0em)'},
         },
         fadeLeft: {
-          '0%': { opacity: 0, transform: 'translateX(-3em)' },
+          '0%': { opacity: 0, transform: 'translateX(-1em)' },
           '100%': { opacity: 1, transform: 'translateX(0)'},
         },
         scaling: {

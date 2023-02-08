@@ -29,8 +29,8 @@ export const projectData = [
     },
     // {
     //   id: 'project-5',
-    //   imgUrl: '/project-5.jpg',
-    //   title: 'Hawkins Labs',
+    //   imgUrl: '/project-1.jpg',
+    //   title: 'Project 1',
     //   liveLink: '',
     //   gitLink: '',
     // },
