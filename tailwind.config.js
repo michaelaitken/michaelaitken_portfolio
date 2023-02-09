@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       keyframes: {
         fadeUp: {
           '0%': { opacity: 0, transform: 'translateY(1em)' },
@@ -45,6 +48,7 @@ module.exports = {
         heroSocialAnimation: 'fadeLeft 1s cubic-bezier(.12,.72,.5,1.2)',
         projectPlayAnimation: 'fadePlay 1.5s ease-out',
         projectGitAnimation: 'fadeGit 1.5s ease-out',
+        tileGrow: 'scaling 0.5s ease-out',
         breathing: 'scaling 10s ease-in-out infinite'
       },
     },
