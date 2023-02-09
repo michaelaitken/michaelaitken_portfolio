@@ -3,12 +3,12 @@ import Image from 'next/image';
 import { Roboto } from '@next/font/google';
 
 const roboto = Roboto({
-    weight: ['100',],
+    weight: ['100','300','400',],
     style: ['normal',],
     subsets: ['latin'],
   })
 
-type Props = { id: string, imgUrl: string, title: string, index: number, active: string, liveLink: string, gitLink: string, handleClick: Function }
+type Props = { id: string, imgUrl: string, title: string, subtitle: string, index: number, active: string, liveLink: string, gitLink: string, tech: Array<string>, handleClick: Function }
 
 const ProjectCard = (props: Props) => {
   return (
@@ -28,17 +28,17 @@ const ProjectCard = (props: Props) => {
 
         />
         {props.active !== props.id ? (
-            <div className='flex absolute justify-center lg:items-end w-full h-full lg:h-full z-10 bg-gradient-to-r lg:bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent'>
+            <div className='flex absolute justify-center lg:items-end w-full h-full lg:h-full z-10 bg-gradient-to-r lg:bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent hover:bg-[rgba(255,138,0,0.1)]'>
                 <div className='flex absolute justify-start lg:justify-start items-center z-10 w-full h-full lg:h-0 lg:rotate-[-90deg] ml-10 lg:ml-0 lg:mb-[130px]'>
                     <h3 className={`font-thin sm:text-[50px] text-[50px] text-white whitespace-nowrap ${roboto.className} animate-heroSocialAnimation`}>{props.title}</h3>
                 </div>
             </div>
             
         ) : (
-            <div className="flex absolute bottom-0 p-2 sm:p-8 justify-end w-full h-full flex-col bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent">
+            <div className="flex absolute bottom-0 p-6 sm:p-8 justify-end w-full h-full flex-col bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent cursor-default">
                 <div className="flex flex-row justify-between md:flex-wrap whitespace-nowrap">
                     <a href={props.liveLink}>
-                        <div className={`flex items-center w-[100px] md:w-[180px] h-[50px] md:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.4)] hover:bg-[#FF8A00]`}>
+                        <div className={`flex items-center w-[100px] xl:w-[180px] h-[50px] xl:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(255,138,0,0.5)] animate-projectPlayAnimation`}>
                             <Image
                                 src="/play.svg"
                                 alt="play"
@@ -46,31 +46,46 @@ const ProjectCard = (props: Props) => {
                                 width={30}
                                 height={30}
                             />
-                            <p className={`font-thin text-[18px] md:text-[32px] leading-[18px] md:leading-[32px] text-white uppercase ml-[-10px] md:ml-[-20px] ${roboto.className}`}>
+                            <p className={`font-thin text-[18px] xl:text-[32px] leading-[18px] xl:leading-[32px] text-white uppercase ml-[-10px] xl:ml-[-20px] ${roboto.className}`}>
                                 live
                             </p>
                         </div>
                     </a>
                     <a href={props.gitLink}>
-                        <div className={`flex justify-center items-center w-[100px] md:w-[180px] h-[50px] md:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.4)] hover:bg-[#FF8A00]`}>
-                            <p className={`font-thin text-[18px] md:text-[32px] leading-[18px] md:leading-[32px] text-white uppercase mr-0 md:mr-[-10px] ${roboto.className}`}>
+                        <div className={`flex justify-center items-center w-[100px] xl:w-[180px] h-[50px] xl:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(255,138,0,0.5)] animate-projectGitAnimation`}>
+                            <p className={`font-thin text-[18px] xl:text-[32px] leading-[18px] xl:leading-[32px] text-white uppercase mr-0 xl:mr-[-10px] ${roboto.className}`}>
                                 code
                             </p>
                             <Image
                                 src="/github.svg"
                                 alt="github"
-                                className=" w-1/2 h-1/2 object-contain mr-[-20px]"
+                                className=" w-1/2 h-1/2 object-contain xl:mr-[-20px] mr-[-14px]"
                                 width={30}
                                 height={30}
                             />
                         </div>
                     </a>
                 </div>
-                <div className="flex flex-row justify-between">
-                </div>
-            <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
-                {props.title}
-            </h2>
+            <div>
+                <h2 className={`mt-[24px] font-normal sm:text-[75px] text-[36px] text-white ${roboto.className} animate-subtitleAnimation delay-1000`}>
+                    {props.title}
+                </h2>
+                <p className={`text-[18px] lg:text-[20px] xl:text-[28px] md:font-extralight font-light text-white ${roboto.className} animate-subtitleAnimation delay-1000`}>
+                    {props.subtitle}
+                </p>
+            </div>
+            <div>
+                {props.tech ? (
+                    props.tech.map((tech, i) => (
+                    <Image 
+                        key={i}
+                        src={tech.svg}
+                        alt={tech.name}
+                    />
+                ))) : (
+                    <div />
+                )}
+            </div>
         </div>
         )}
     </div>

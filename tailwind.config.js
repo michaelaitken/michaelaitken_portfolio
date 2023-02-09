@@ -12,12 +12,24 @@ module.exports = {
           '0%': { opacity: 0, transform: 'translateY(1em)' },
           '100%': { opacity: 1, transform: 'translateY(0em)'},
         },
+        fadeUpProjectSubtitle: {
+          '0%, 30%': { opacity: 0, transform: 'translateY(1em)' },
+          '100%': { opacity: 1, transform: 'translateY(0em)'},
+        },
         fadeDown: {
           '0%': { opacity: 0, transform: 'translateY(-3em)' },
           '100%': { opacity: 1, transform: 'translateY(0em)'},
         },
         fadeLeft: {
           '0%': { opacity: 0, transform: 'translateX(-1em)' },
+          '100%': { opacity: 1, transform: 'translateX(0)'},
+        },
+        fadePlay: {
+          '0%, 30%': { opacity: 0, transform: 'translateX(-1em)' },
+          '100%': { opacity: 1, transform: 'translateX(0)'},
+        },
+        fadeGit: {
+          '0%, 30%': { opacity: 0, transform: 'translateX(1em)' },
           '100%': { opacity: 1, transform: 'translateX(0)'},
         },
         scaling: {
@@ -28,8 +40,11 @@ module.exports = {
       },
       animation: {
         heroTitleAnimation: 'fadeUp 1.5s cubic-bezier(.12,.72,.5,1.2)',
+        subtitleAnimation: 'fadeUpProjectSubtitle 1.5s ease-out',
         navbarAnimation: 'fadeDown 1s ease-out',
         heroSocialAnimation: 'fadeLeft 1s cubic-bezier(.12,.72,.5,1.2)',
+        projectPlayAnimation: 'fadePlay 1.5s ease-out',
+        projectGitAnimation: 'fadeGit 1.5s ease-out',
         breathing: 'scaling 10s ease-in-out infinite'
       },
     },

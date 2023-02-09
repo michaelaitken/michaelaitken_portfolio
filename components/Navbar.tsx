@@ -23,7 +23,7 @@ export default function Navbar({}: Props) {
 
     return (
         <nav className={roboto.className}>
-            {/* Navbar for normal screen size ${(0.75+(i*0.5)).toString} */}
+            {/* Navbar for normal screen size */}
             <div className="flex justify-between items-center max-w-[2000px] mx-auto">
                 <div className="ml-[60px] lg:ml-[100px] mt-[50px] animate-navbarAnimation">
                     <Image className="w-[100px] h-[100px] object-contain" src={logo} alt="logo"/>
@@ -44,7 +44,7 @@ export default function Navbar({}: Props) {
                 {/* Navbar Menu for Mobile */}
                 <div className="relative flex lg:hidden justify-end animate-navbarAnimation">
                     <button 
-                        className="mt-[50px] mr-[60px] z-50"
+                        className={`mt-[50px] mr-[60px] z-50`}
                         onClick={handleToggle}
                     >
                         {menuOpen ? (
