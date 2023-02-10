@@ -44,22 +44,23 @@ export default function Navbar({}: Props) {
                 {/* Navbar Menu for Mobile */}
                 <div className="relative flex lg:hidden justify-end animate-navbarAnimation">
                     <button 
-                        className={`mt-[50px] mr-[60px] z-50`}
+                        className={`${menuOpen ? "mt-[-40px] mr-[140px] z-50" : "mt-[50px] mr-[60px] z-50"}`}
                         onClick={handleToggle}
                     >
                         {menuOpen ? (
-                            <Image className="w-[80px] h-[80px] object-contain" src={close} alt="close"/>
+                            <Image className="fixed w-[80px] h-[80px] object-contain" src={close} alt="close"/>
                         ) : (
                             <Image className="w-[80px] h-[80px] object-contain" src={menu} alt="menu"/>
                         )}
                     </button>
-                    <div className={`bg-gradient-to-r from-[#000000]/95 to-transparent backdrop-blur-md w-[100vw] h-[100vh] t-0 l-0 z-40 ${menuOpen ? "fixed overflow-y-scroll hide-scroll-bar" : "hidden"}`}>
+                    <div className={`bg-gradient-to-r from-[#000000]/95 to-transparent backdrop-blur-md w-[100vw] h-[100vh] t-0 l-0 z-40 ${menuOpen ? "fixed overflow-y-scroll hide-scroll-bar mt-[-80px]" : "hidden"}`}>
                         <div className="flex flex-col">
                             <ul className="text-white text-[50px] ml-[70px] mt-[100px]">
                                 {links.map((link, i) => (
                                     <li 
                                     key={i}
                                     className="mt-[90px] font-thin hover:text-[#FF8A00] uppercase"
+                                    onClick={handleToggle}
                                     >
                                     <a href={`#${link}`}>{link}</a>
                                     </li>

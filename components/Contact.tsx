@@ -24,11 +24,11 @@ const Contact = (props: Props) => {
     const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
 
     const onSubmit: SubmitHandler<Inputs> = formData => {
-        window.location.href = `mailto:aitken.michael@outlook.com?subject=${formData.subject}&body=${formData.message}`
+        window.location.href = `mailto:contact@michaelaitken.com?subject=${formData.subject}&body=${formData.message}`
     };
 
     const onEmail = () => {
-        window.location.href = 'mailto:aitken.michael@outlook.com'
+        window.location.href = 'mailto:contact@michaelaitken.com'
     };
   
 
