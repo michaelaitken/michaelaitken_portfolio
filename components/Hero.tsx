@@ -44,7 +44,7 @@ const Hero = ({}: Props) => {
         </div>
         <p className={`text-[18px] md:text-[28px] lg:text-[32px] text-[#FF8A00] font-semibold uppercase md:-mt-1 ${roboto.className}`}>software developer</p>
       </div>
-      <div className='flex justify-between absolute w-[100vw] bottom-10 z-10 max-w-[1920px]'>
+      <div className='flex justify-between relative w-[100vw] bottom-10 z-10 max-w-[1920px]'>
         <div className='w-[80px] sm:w-[160px]'/>
         <div className='flex justify-end'>
           <a href='#projects'>

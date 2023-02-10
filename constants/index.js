@@ -15,6 +15,9 @@ const firebase = {name: 'Firebase', svg: '/firebase_icon.svg'};
 
 const data = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 
+export const linkedInProfile = '';
+export const githubProfile = '';
+
 // TECH: Don't include more than 5 tech items! Mobile Scaling might have issues.
 export const projectData = [
     {
