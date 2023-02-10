@@ -4,7 +4,7 @@ import { SkillGrid } from 'components';
 import { techSkills } from '@/constants';
 
 const roboto = Roboto({
-  weight: ['100','300','400',],
+  weight: ['100','300','400','700',],
   style: ['normal',],
   subsets: ['latin'],
 })
@@ -12,7 +12,8 @@ const roboto = Roboto({
 type Props = {}
 
 const About = (props: Props) => {
-  const [active, setActive] = useState('project-2')
+  const aboutPClass = "font-thin lg:text-[32px] md:text-[26px] text-[20px] text-center text-[#E7E7E7]"
+  const aboutSpanClass = 'font-semibold'
 
   return (
     <div className=''>
@@ -23,10 +24,16 @@ const About = (props: Props) => {
               <div className='h-[60px] md:h-[120px] w-1 md:w-2 bg-[#FF8A00] rounded-full mx-5 md:mx-10' />
               <h1 className={`text-center font-light uppercase text-[50px] md:text-[100px] ${roboto.className}`}><span className='text-[55px] md:text-[110px]'>A</span>bout</h1>
             </div>
-            <div className='w-[300px] h-[300px] bg-slate-500' />
+            <div className='px-[30px] md:px-[50px]'>
+              <p className={`mt-[40px] ${aboutPClass} ${roboto.className}`}>Hi, I&apos;m <span className={`${aboutSpanClass}`}>Michael</span>! I&apos;m a talented web developer with a focus on <span className={`${aboutSpanClass}`}>front-end development</span>. My passion for technology and electronics has driven me to excel in creating dynamic and interactive websites that deliver <span className={`${aboutSpanClass}`}>outstanding user experiences</span>.</p>
+
+              <p className={`my-[40px] ${aboutPClass} ${roboto.className}`}>I have honed my skills in a wide range of front-end technologies, including <span className={`${aboutSpanClass}`}>React, NEXT.js, Tailwind</span> and many more. I am also familiar with <span className={`${aboutSpanClass}`}>back-end development</span> and <span className={`${aboutSpanClass}`}>databases</span>, which has given me a well-rounded understanding of the full web development process.</p>
+
+              <p className={`mb-[40px] ${aboutPClass} ${roboto.className}`}>I am always eager to stay up to date with the <span className={`${aboutSpanClass}`}>latest industry trends and technologies</span>. Whether it&apos;s exploring new frameworks or experimenting with cutting-edge technologies, I&apos;m always looking for ways to <span className={`${aboutSpanClass}`}>expand my knowledge</span> and improve my craft.</p>
+            </div>
           </div>
           <div className='flex flex-col text-center'>
-            <p className={`text-[#323232] font-normal uppercase mb-4 ${roboto.className}`}>Hover over the tiles</p>
+            <p className={`hidden lg:inline text-[#323232] font-normal uppercase mb-4 ${roboto.className}`}>Hover over the tiles</p>
             <SkillGrid techSkills={techSkills} />
           </div>
         </div>

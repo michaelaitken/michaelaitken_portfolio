@@ -20,7 +20,6 @@ const Project = (props: Props) => {
         <div className='flex justify-start items-center mb-[-25px]'>
           <div className='h-[60px] md:h-[120px] w-1 md:w-2 bg-[#FF8A00] rounded-full mx-5 md:mx-10' />
           <h1 className={`text-center font-light uppercase text-[50px] md:text-[100px] ${roboto.className}`}><span className='text-[55px] md:text-[110px]'>P</span>rojects</h1>
-          {/* <p className='text-center text-white'>Information Here</p> */}
         </div>
         <div className='mt-[50px] flex lg:flex-row flex-col min-h-[90vh] gap-5'>
           {projectData.map((project, index) => (
