@@ -6,6 +6,7 @@ import About from './About';
 import SkillGrid from './SkillGrid';
 import Tooltip from './Tooltip';
 import Contact from './Contact';
+import Footer from './Footer';
 
 export {
     Navbar,
@@ -16,4 +17,5 @@ export {
     SkillGrid,
     Tooltip,
     Contact,
+    Footer,
 };

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Navbar, Hero, Project, About, Contact } from '../components';
+import { Navbar, Hero, Project, About, Contact, Footer } from '../components';
 
 export default function Home() {
   return (
@@ -42,10 +42,10 @@ export default function Home() {
         <section id='contact'>
           <Contact />
         </section>
-
-
-        {/* Contact Me */}
-        
+        <div className='absolute -z-20 top-[300%] left-[10%] md:left-[45%] xl:left-[60%] h-[600px]'>
+          <div className=' gradient-01 w-[600px] h-[400px] rotate-[40deg]' />
+        </div>
+        <Footer />
       </main>
     </>
   )
