@@ -32,7 +32,7 @@ const About = (props: Props) => {
           </div>
         </div>
         <div className='flex flex-col text-center'>
-          <p className={`hidden lg:inline text-[#323232] font-normal uppercase mb-4 ${roboto.className}`}>Hover over the tiles</p>
+          <p className={`text-[#323232] font-normal uppercase mb-4 ${roboto.className}`}>Hover over the tiles</p>
           <SkillGrid techSkills={techSkills} />
         </div>
       </div>
