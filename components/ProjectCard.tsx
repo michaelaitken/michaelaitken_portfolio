@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { Roboto } from '@next/font/google';
+import Tooltip from './Tooltip';
 
 const roboto = Roboto({
     weight: ['100','300','400',],
@@ -8,7 +9,11 @@ const roboto = Roboto({
     subsets: ['latin'],
   })
 
-type Props = { id: string, imgUrl: string, title: string, subtitle: string, index: number, active: string, liveLink: string, gitLink: string, tech: Array<string>, handleClick: Function }
+type Tech = {
+    name: string,
+    svg: string,
+}
+type Props = { id: string, imgUrl: string, title: string, subtitle: string, index: number, active: string, liveLink: string, gitLink: string, tech: Array<Tech>, handleClick: Function }
 
 const ProjectCard = (props: Props) => {
   return (
@@ -38,7 +43,7 @@ const ProjectCard = (props: Props) => {
             <div className="flex absolute bottom-0 p-6 sm:p-8 justify-end w-full h-full flex-col bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent cursor-default">
                 <div className="flex flex-row justify-between md:flex-wrap whitespace-nowrap">
                     <a href={props.liveLink}>
-                        <div className={`flex items-center w-[100px] xl:w-[180px] h-[50px] xl:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(255,138,0,0.5)] animate-projectPlayAnimation`}>
+                        <div className={`flex items-center w-[100px] xl:w-[180px] h-[50px] xl:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(255,138,0,0.5)] animate-projectPlayAnimation`}>
                             <Image
                                 src="/play.svg"
                                 alt="play"
@@ -52,7 +57,7 @@ const ProjectCard = (props: Props) => {
                         </div>
                     </a>
                     <a href={props.gitLink}>
-                        <div className={`flex justify-center items-center w-[100px] xl:w-[180px] h-[50px] xl:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(255,138,0,0.5)] animate-projectGitAnimation`}>
+                        <div className={`flex justify-center items-center w-[100px] xl:w-[180px] h-[50px] xl:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(255,138,0,0.5)] animate-projectGitAnimation`}>
                             <p className={`font-thin text-[18px] xl:text-[32px] leading-[18px] xl:leading-[32px] text-white uppercase mr-0 xl:mr-[-10px] ${roboto.className}`}>
                                 code
                             </p>
@@ -67,21 +72,27 @@ const ProjectCard = (props: Props) => {
                     </a>
                 </div>
             <div>
-                <h2 className={`mt-[24px] font-normal sm:text-[75px] text-[36px] text-white ${roboto.className} animate-subtitleAnimation delay-1000`}>
+                <h2 className={`mt-[24px] font-normal sm:text-[75px] sm:leading-[75px] text-[36px] leading-[36px] text-white ${roboto.className} animate-subtitleAnimation delay-1000`}>
                     {props.title}
                 </h2>
-                <p className={`text-[18px] lg:text-[20px] xl:text-[28px] md:font-extralight font-light text-white ${roboto.className} animate-subtitleAnimation delay-1000`}>
+                <p className={`text-[14px] md:text-[24px] xl:text-[28px] md:font-extralight font-light text-white ${roboto.className} animate-subtitleAnimation delay-1000`}>
                     {props.subtitle}
                 </p>
             </div>
-            <div>
+            <div className='flex justify-center mt-3 animate-subtitleAnimation delay-1000'>
                 {props.tech ? (
                     props.tech.map((tech, i) => (
-                    <Image 
-                        key={i}
-                        src={tech.svg}
-                        alt={tech.name}
-                    />
+                    <Tooltip key={i} text={tech.name}>
+                        <div className="flex justify-center items-center w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] p-1 mx-1 sm:mx-2 hover:bg-[rgba(0,0,0,0.2)] rounded-full object-contain">
+                            <Image 
+                                src={tech.svg}
+                                alt={tech.name}
+                                width={30}
+                                height={30}
+                                className="h-[20px] sm:h-[30px] object-contain"
+                            />
+                        </div>
+                    </Tooltip>
                 ))) : (
                     <div />
                 )}

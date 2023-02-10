@@ -18,111 +18,111 @@ body {
 }
 
 .gradient-01 {
-    background-image: radial-gradient(circle, rgb(39,39,39) 0%, rgb(0,0,0) 100%);
-    background-image: -moz-radial-gradient(circle, rgb(39,39,39) 0%, rgb(0,0,0) 100%);
-    background-image: -webkit-radial-gradient(circle, rgb(39,39,39) 0%, rgb(0,0,0) 100%);
-    filter: blur(150px);
-  }
+  background-image: radial-gradient(circle, rgb(39,39,39) 0%, rgb(0,0,0) 100%);
+  background-image: -moz-radial-gradient(circle, rgb(39,39,39) 0%, rgb(0,0,0) 100%);
+  background-image: -webkit-radial-gradient(circle, rgb(39,39,39) 0%, rgb(0,0,0) 100%);
+  filter: blur(150px);
+}
 
-  .gradient-02 {
-    background-image: radial-gradient(circle, rgb(42,42,42) 0%, rgb(0,0,0) 100%);
-    background-image: -moz-radial-gradient(circle, rgb(42,42,42) 0%, rgb(0,0,0) 100%);
-    background-image: -webkit-radial-gradient(circle, rgb(42,42,42) 0%, rgb(0,0,0) 100%);
-    filter: blur(150px);
-  }
+.gradient-02 {
+  background-image: radial-gradient(circle, rgb(42,42,42) 0%, rgb(0,0,0) 100%);
+  background-image: -moz-radial-gradient(circle, rgb(42,42,42) 0%, rgb(0,0,0) 100%);
+  background-image: -webkit-radial-gradient(circle, rgb(42,42,42) 0%, rgb(0,0,0) 100%);
+  filter: blur(150px);
+}
 
-  .hexagon {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  }
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
 
 
   /* Classes for all TechSkill Icons */
-  .hover-nodejs:hover, .hover-nodejs:active {
-    background: rgb(0,139,14);
-    background: radial-gradient(circle, rgba(0,139,14,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-nodejs:hover, .hover-nodejs:active {
+  background: rgb(0,139,14);
+  background: radial-gradient(circle, rgba(0,139,14,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-materialui:hover, .hover-materialui:active {
-    background: rgb(0,123,211);
-    background: radial-gradient(circle, rgba(0,123,211,1) 0%, rgba(39,39,39,1) 100%);
-  } 
+.hover-materialui:hover, .hover-materialui:active {
+  background: rgb(0,123,211);
+  background: radial-gradient(circle, rgba(0,123,211,1) 0%, rgba(39,39,39,1) 100%);
+} 
 
-  .hover-tailwind:hover, .hover-tailwind:active {
-    background: rgb(0,204,204);
-    background: radial-gradient(circle, rgba(0,204,204,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-tailwind:hover, .hover-tailwind:active {
+  background: rgb(0,204,204);
+  background: radial-gradient(circle, rgba(0,204,204,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-html:hover, .hover-html:active {
-    background: rgb(197,118,0);
-    background: radial-gradient(circle, rgba(197,118,0,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-html:hover, .hover-html:active {
+  background: rgb(197,118,0);
+  background: radial-gradient(circle, rgba(197,118,0,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-javascript:hover, .hover-javascript:active {
-    background: rgb(182,164,0);
-    background: radial-gradient(circle, rgba(182,164,0,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-javascript:hover, .hover-javascript:active {
+  background: rgb(182,164,0);
+  background: radial-gradient(circle, rgba(182,164,0,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-sass:hover, .hover-sass:active {
-    background: rgb(222,0,187);
-    background: radial-gradient(circle, rgba(222,0,187,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-sass:hover, .hover-sass:active {
+  background: rgb(222,0,187);
+  background: radial-gradient(circle, rgba(222,0,187,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-python:hover, .hover-python:active {
-    background: rgb(0,48,219);
-    background: radial-gradient(circle, rgba(0,48,219,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-python:hover, .hover-python:active {
+  background: rgb(0,48,219);
+  background: radial-gradient(circle, rgba(0,48,219,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-react:hover, .hover-react:active {
-    background: rgb(0,167,220);
-    background: radial-gradient(circle, rgba(0,167,220,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-react:hover, .hover-react:active {
+  background: rgb(0,167,220);
+  background: radial-gradient(circle, rgba(0,167,220,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-css:hover, .hover-css:active {
-    background: rgb(0,55,198);
-    background: radial-gradient(circle, rgba(0,55,198,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-css:hover, .hover-css:active {
+  background: rgb(0,55,198);
+  background: radial-gradient(circle, rgba(0,55,198,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-git:hover, .hover-git:active {
-    background: rgb(181,87,0);
-    background: radial-gradient(circle, rgba(181,87,0,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-git:hover, .hover-git:active {
+  background: rgb(181,87,0);
+  background: radial-gradient(circle, rgba(181,87,0,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-next-express:hover, .hover-next-express:active {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-next-express:hover, .hover-next-express:active {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-mongodb:hover, .hover-mongodb:active {
-    background: rgb(0,139,72);
-    background: radial-gradient(circle, rgba(0,139,72,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-mongodb:hover, .hover-mongodb:active {
+  background: rgb(0,139,72);
+  background: radial-gradient(circle, rgba(0,139,72,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-postgresql:hover, .hover-postgresql:active {
-    background: rgb(0,148,255);
-    background: radial-gradient(circle, rgba(0,148,255,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-postgresql:hover, .hover-postgresql:active {
+  background: rgb(0,148,255);
+  background: radial-gradient(circle, rgba(0,148,255,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-rapidapi:hover, .hover-rapidapi:active {
-    background: rgb(0,102,255);
-    background: radial-gradient(circle, rgba(0,102,255,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-rapidapi:hover, .hover-rapidapi:active {
+  background: rgb(0,102,255);
+  background: radial-gradient(circle, rgba(0,102,255,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-redux-bootstrap:hover, .hover-redux-bootstrap:active {
-    background: rgb(136,17,255);
-    background: radial-gradient(circle, rgba(136,17,255,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-redux-bootstrap:hover, .hover-redux-bootstrap:active {
+  background: rgb(136,17,255);
+  background: radial-gradient(circle, rgba(136,17,255,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-typescript:hover, .hover-typescript:active {
-    background: rgb(0,87,255);
-    background: radial-gradient(circle, rgba(0,87,255,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-typescript:hover, .hover-typescript:active {
+  background: rgb(0,87,255);
+  background: radial-gradient(circle, rgba(0,87,255,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-vscode:hover, .hover-vscode:active {
-    background: rgb(0,163,255);
-    background: radial-gradient(circle, rgba(0,163,255,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-vscode:hover, .hover-vscode:active {
+  background: rgb(0,163,255);
+  background: radial-gradient(circle, rgba(0,163,255,1) 0%, rgba(39,39,39,1) 100%);
+}
 
-  .hover-firebase:hover, .hover-firebase:active {
-    background: rgb(250,255,0);
-    background: radial-gradient(circle, rgba(250,255,0,1) 0%, rgba(39,39,39,1) 100%);
-  }
+.hover-firebase:hover, .hover-firebase:active {
+  background: rgb(250,255,0);
+  background: radial-gradient(circle, rgba(250,255,0,1) 0%, rgba(39,39,39,1) 100%);
+}  

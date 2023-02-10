@@ -16,17 +16,19 @@ const About = (props: Props) => {
 
   return (
     <div className=''>
-      <div className='max-w-[1920px] mx-auto w-fullflex flex-col'>
-        <div className='flex justify-start items-center mb-[-25px] text-white px-6 py-4'>
-          <div className='h-[60px] md:h-[120px] w-1 md:w-2 bg-[#FF8A00] rounded-full mx-5 md:mx-10' />
-          <h1 className={`text-center font-light uppercase text-[50px] md:text-[100px] ${roboto.className}`}><span className='text-[55px] md:text-[110px]'>A</span>bout</h1>
-        </div>
-        <div className='flex flex-col xl:flex-row justify-center'>
-            <div className='w-[300px] h-[300px] bg-slate-500' />
-
-            <div>
-                <SkillGrid techSkills={techSkills} />
+      <div className='max-w-[1920px] mx-auto w-full flex flex-col'>
+        <div className='flex flex-col xl:flex-row justify-center xl:justify-between'>
+          <div className='flex flex-col'>
+            <div className='flex justify-start items-center mb-[-25px] text-white px-6 pb-4'>
+              <div className='h-[60px] md:h-[120px] w-1 md:w-2 bg-[#FF8A00] rounded-full mx-5 md:mx-10' />
+              <h1 className={`text-center font-light uppercase text-[50px] md:text-[100px] ${roboto.className}`}><span className='text-[55px] md:text-[110px]'>A</span>bout</h1>
             </div>
+            <div className='w-[300px] h-[300px] bg-slate-500' />
+          </div>
+          <div className='flex flex-col text-center'>
+            <p className={`text-[#323232] font-normal uppercase mb-4 ${roboto.className}`}>Hover over the tiles</p>
+            <SkillGrid techSkills={techSkills} />
+          </div>
         </div>
       </div>
     </div>

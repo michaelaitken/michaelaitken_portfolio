@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Navbar, Hero, Project, About } from '../components';
+import { Navbar, Hero, Project, About, Tooltip } from '../components';
 
 export default function Home() {
   return (
@@ -33,7 +33,6 @@ export default function Home() {
         <section id='about'>
           <About />
         </section>
-
 
         {/* Skills */}
 

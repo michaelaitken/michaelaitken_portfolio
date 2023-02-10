@@ -7,9 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
+
       keyframes: {
         fadeUp: {
           '0%': { opacity: 0, transform: 'translateY(1em)' },

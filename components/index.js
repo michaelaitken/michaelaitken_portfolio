@@ -4,6 +4,7 @@ import Project from './Project';
 import ProjectCard from './ProjectCard';
 import About from './About';
 import SkillGrid from './SkillGrid';
+import Tooltip from './Tooltip';
 
 export {
     Navbar,
@@ -12,4 +13,5 @@ export {
     ProjectCard,
     About,
     SkillGrid,
+    Tooltip,
 };
