@@ -41,10 +41,10 @@ export default function Navbar({}: Props) {
                     </ul>
                 </div>
 
-                {/* Navbar Menu for Mobile */}
+                {/* Navbar Menu for Mobile  X: mt-[-40px] mr-[140px] z-50  */}
                 <div className="relative flex lg:hidden justify-end animate-navbarAnimation">
                     <button 
-                        className={`${menuOpen ? "mt-[-40px] mr-[140px] z-50" : "mt-[50px] mr-[60px] z-50"}`}
+                        className={`${menuOpen ? "mt-[50px] mr-[60px] z-50" : "mt-[50px] mr-[60px] z-50"}`} 
                         onClick={handleToggle}
                     >
                         {menuOpen ? (
