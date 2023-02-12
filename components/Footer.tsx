@@ -21,7 +21,7 @@ const Footer = (props: Props) => {
             <h4 className='text-white uppercase font-semibold text-[20px] leading-[20px] md:text-[32px] md:leading-[32px] ml-7'>Michael aitken</h4>
             <h4 className='text-white font-thin text-[12px] leading-[12px] md:text-[16px] md:leading-[16px]'>Copyright © {new Date().getFullYear()} Michael Aitken. All rights reserved</h4>
             <div className='flex space-x-2 md:space-x-5 mr-7'>
-                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href=''>
+                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href='https://github.com/michaelaitken' target="_blank" rel="noopener noreferrer">
                     <Image 
                         src={github}
                         alt='github'
@@ -30,7 +30,7 @@ const Footer = (props: Props) => {
                         className="h-[25px] md:h-[35px]"
                     />
                 </a>
-                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href=''>
+                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href='' target="_blank" rel="noopener noreferrer">
                     <Image 
                         src={linkedin}
                         alt='linkedin'

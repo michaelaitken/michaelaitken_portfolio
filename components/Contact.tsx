@@ -50,7 +50,7 @@ const Contact = (props: Props) => {
                     />
                     <p>contact@michaelaitken.com</p>
                 </button>
-                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href=''>
+                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href='https://github.com/michaelaitken' target="_blank" rel="noopener noreferrer">
                     <Image 
                         src={github}
                         alt='github'

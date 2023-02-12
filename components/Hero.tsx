@@ -26,12 +26,12 @@ const Hero = ({}: Props) => {
   {
     name: 'github',
     image: github,
-    link: 'www.github.com'
+    link: 'https://github.com/michaelaitken'
   },
   {
     name: 'linkedin',
     image: linkedin,
-    link: 'www.linkedin.com'
+    link: ''
   },
 ];
 
@@ -57,6 +57,8 @@ const Hero = ({}: Props) => {
               key={i}  
               href={social.link}
               className="my-5 sm:mx-5"
+              target="_blank" 
+              rel="noopener noreferrer"
             >
               <Image
               src={social.image}
