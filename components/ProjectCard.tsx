@@ -42,7 +42,7 @@ const ProjectCard = (props: Props) => {
         ) : (
             <div className="flex absolute bottom-0 p-6 sm:p-8 justify-end w-full h-full flex-col bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent cursor-default">
                 <div className="flex flex-row justify-between md:flex-wrap whitespace-nowrap">
-                    <a href={props.liveLink}>
+                    <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
                         <div className={`flex items-center w-[100px] xl:w-[180px] h-[50px] xl:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(255,138,0,0.5)] animate-projectPlayAnimation`}>
                             <Image
                                 src="/play.svg"
@@ -56,7 +56,7 @@ const ProjectCard = (props: Props) => {
                             </p>
                         </div>
                     </a>
-                    <a href={props.gitLink}>
+                    <a href={props.gitLink} target="_blank" rel="noopener noreferrer">
                         <div className={`flex justify-center items-center w-[100px] xl:w-[180px] h-[50px] xl:h-[90px] rounded-full glassmorphism mb-[16px] cursor-pointer bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(255,138,0,0.5)] animate-projectGitAnimation`}>
                             <p className={`font-thin text-[18px] xl:text-[32px] leading-[18px] xl:leading-[32px] text-white uppercase mr-0 xl:mr-[-10px] ${roboto.className}`}>
                                 code
