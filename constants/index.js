@@ -34,7 +34,7 @@ export const projectData = [
       imgUrl: '/aitken-music.png',
       title: 'Aitken Music',
       subtitle: 'Aitken Music is a Spotify clone web app I created to help me become more familiar with API call using RapidAPI and Redux',
-      liveLink: 'music.michaelaitken.com',
+      liveLink: 'https://music.michaelaitken.com',
       gitLink: 'https://github.com/michaelaitken/aitken_music',
       tech: [tailwind, react, rapidapi, redux],
     },
