@@ -18,7 +18,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
-
+/* 
 .hide-scroll-bar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -26,7 +26,7 @@ body {
 
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .gradient-01 {
   background-image: radial-gradient(circle, rgb(39,39,39) 0%, rgb(0,0,0) 100%);

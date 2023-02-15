@@ -28,7 +28,7 @@ const About = (props: Props) => {
 
             <p className={`my-[40px] ${aboutPClass} ${roboto.className}`}>I have honed my skills in a wide range of front-end technologies, including <span className={`${aboutSpanClass}`}>React, NEXT.js, Tailwind</span> and many more. I am also familiar with <span className={`${aboutSpanClass}`}>back-end development</span> and <span className={`${aboutSpanClass}`}>databases</span>, which has given me a well-rounded understanding of the full web development process.</p>
 
-            <p className={`mb-[40px] ${aboutPClass} ${roboto.className}`}>I am always eager to stay up to date with the <span className={`${aboutSpanClass}`}>latest industry trends and technologies</span>. Whether it&apos;s exploring new frameworks or experimenting with cutting-edge technologies, I&apos;m always looking for ways to <span className={`${aboutSpanClass}`}>expand my knowledge</span> and improve my craft.</p>
+            {/* <p className={`mb-[40px] ${aboutPClass} ${roboto.className}`}>I am always eager to stay up to date with the <span className={`${aboutSpanClass}`}>latest industry trends and technologies</span>. Whether it&apos;s exploring new frameworks or experimenting with cutting-edge technologies, I&apos;m always looking for ways to <span className={`${aboutSpanClass}`}>expand my knowledge</span> and improve my craft.</p> */}
           </div>
         </div>
         <div className='flex flex-col text-center'>

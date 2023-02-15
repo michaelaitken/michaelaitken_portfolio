@@ -13,7 +13,7 @@ const typescript = {name: 'Typescript', svg: '/typescript_icon.svg'};
 const bootstrap = {name: 'Bootstrap', svg: '/bootstrap_icon.svg'};
 const firebase = {name: 'Firebase', svg: '/firebase_icon.svg'};
 
-const data = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+const data = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 
 export const linkedInProfile = '';
 export const githubProfile = '';
@@ -33,7 +33,7 @@ export const projectData = [
       id: 'project-2',
       imgUrl: '/aitken-music.png',
       title: 'Aitken Music',
-      subtitle: 'Aitken Music is a Spotify clone web app I created to help me become more familiar with API call using RapidAPI and Redux',
+      subtitle: 'Aitken Music is a Spotify clone web app experimenting with RapidAPI and Redux',
       liveLink: 'https://music.michaelaitken.com',
       gitLink: 'https://github.com/michaelaitken/aitken_music',
       tech: [tailwind, react, rapidapi, redux],
