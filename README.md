@@ -4,6 +4,8 @@ This is my personal portfolio website, containing information about my projects 
 
 The live version of the website can be found at [michaelaitken.com](https://michaelaitken.com).
 
+*Note: I'm in the process of commenting my code to make it more readable*
+
 ## Getting Started
 These instructions will help you set up the project on your local machine.
 
