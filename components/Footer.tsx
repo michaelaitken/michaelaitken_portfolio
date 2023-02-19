@@ -30,7 +30,7 @@ const Footer = (props: Props) => {
                         className="h-[25px] md:h-[35px]"
                     />
                 </a>
-                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href='' target="_blank" rel="noopener noreferrer">
+                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href='https://www.linkedin.com/in/maitken/' target="_blank" rel="noopener noreferrer">
                     <Image 
                         src={linkedin}
                         alt='linkedin'

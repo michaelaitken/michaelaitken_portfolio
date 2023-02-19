@@ -31,7 +31,7 @@ const Hero = ({}: Props) => {
   {
     name: 'linkedin',
     image: linkedin,
-    link: ''
+    link: 'https://www.linkedin.com/in/maitken/'
   },
 ];
 

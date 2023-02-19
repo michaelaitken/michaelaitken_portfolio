@@ -15,8 +15,8 @@ const firebase = {name: 'Firebase', svg: '/firebase_icon.svg'};
 
 const data = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 
-export const linkedInProfile = '';
-export const githubProfile = '';
+export const linkedInProfile = 'https://www.linkedin.com/in/maitken/';
+export const githubProfile = 'https://github.com/michaelaitken';
 
 // TECH: Don't include more than 5 tech items! Mobile Scaling might have issues.
 export const projectData = [
