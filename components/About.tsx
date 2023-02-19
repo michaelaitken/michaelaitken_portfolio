@@ -24,9 +24,9 @@ const About = (props: Props) => {
             <h1 className={`text-center font-light uppercase text-[50px] md:text-[100px] ${roboto.className}`}><span className='text-[55px] md:text-[110px]'>A</span>bout</h1>
           </div>
           <div className='px-[30px] md:px-[50px]'>
-            <p className={`mt-[40px] ${aboutPClass} ${roboto.className}`}>Hi, I&apos;m <span className={`${aboutSpanClass}`}>Michael</span>! I&apos;m a talented web developer with a focus on <span className={`${aboutSpanClass}`}>front-end development</span>. My passion for technology and electronics has driven me to excel in creating dynamic and interactive websites that deliver <span className={`${aboutSpanClass}`}>outstanding user experiences</span>.</p>
+            <p className={`mt-[40px] ${aboutPClass} ${roboto.className}`}>Hi, I&apos;m Michael, a <span className={`${aboutSpanClass}`}>software developer</span> with a passion for technology and electronics. I have experience in a <span className={`${aboutSpanClass}`}>wide range of technologies</span>, as shown in the tiles.</p>
 
-            <p className={`my-[40px] ${aboutPClass} ${roboto.className}`}>I have honed my skills in a wide range of front-end technologies, including <span className={`${aboutSpanClass}`}>React, NEXT.js, Tailwind</span> and many more. I am also familiar with <span className={`${aboutSpanClass}`}>back-end development</span> and <span className={`${aboutSpanClass}`}>databases</span>, which has given me a well-rounded understanding of the full web development process.</p>
+            <p className={`my-[40px] ${aboutPClass} ${roboto.className}`}>You can view a few of my software development projects above, which showcase my skills and experience in developing <span className={`${aboutSpanClass}`}>efficient, scalable,</span> and <span className={`${aboutSpanClass}`}>user-friendly</span> applications.</p>
 
             {/* <p className={`mb-[40px] ${aboutPClass} ${roboto.className}`}>I am always eager to stay up to date with the <span className={`${aboutSpanClass}`}>latest industry trends and technologies</span>. Whether it&apos;s exploring new frameworks or experimenting with cutting-edge technologies, I&apos;m always looking for ways to <span className={`${aboutSpanClass}`}>expand my knowledge</span> and improve my craft.</p> */}
           </div>

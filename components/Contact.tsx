@@ -59,7 +59,7 @@ const Contact = (props: Props) => {
                     />
                     <p>Github</p>
                 </a>
-                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href=''>
+                <a className='flex space-x-4 items-center hover:text-[#FF8A00]' href='https://www.linkedin.com/in/maitken/' target="_blank" rel="noopener noreferrer">
                     <Image 
                         src={linkedin}
                         alt='linkedin'
