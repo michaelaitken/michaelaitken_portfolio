@@ -40,12 +40,12 @@ export const projectData = [
     },
     {
       id: 'project-3',
-      imgUrl: '/project-3.jpg',
-      title: 'Upcoming...',
-      subtitle: data,
-      liveLink: '',
-      gitLink: 'https://github.com/michaelaitken',
-      tech: [sass, react, nodejs, postgresql, expressjs],
+      imgUrl: '/face-recognition.jpg',
+      title: 'Face Recognition',
+      subtitle: 'Sign in or Register to detect faces in an image from an image url.',
+      liveLink: 'https://face-recognition-maitken.herokuapp.com/',
+      gitLink: 'https://github.com/michaelaitken/face-recognition_server',
+      tech: [react, nodejs, expressjs, postgresql],
     },
     {
       id: 'project-4',
