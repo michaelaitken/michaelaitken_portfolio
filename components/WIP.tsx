@@ -38,7 +38,7 @@ const Hero = ({}: Props) => {
 
   return (
     <div className='flex flex-col justify-center items-center h-[100vh] w-[100%]'>
-      <Image src={underConstruction} alt='construction_image' height={500} width={500}/>
+      <Image src={underConstruction} alt='construction_image' height={500} width={500} className='w-[300px] h-[300px] md:w-[500px] md:h-[500px]'/>
       <div className='flex flex-col md:flex-row gap-0 md:gap-10 justify-center items-center my-5'>
         <h1 className='text-white text-[100px] uppercase font-extralight leading-[100px]'>Coming</h1>
         <h1 className='text-white text-[100px] uppercase font-extralight leading-[100px]'>Soon!</h1>
@@ -62,7 +62,7 @@ const Hero = ({}: Props) => {
               <Image
               src={social.image}
               alt={social.name}
-              className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+              className="w-[40px] h-[40px]"
               />
             </a>
           ))}
