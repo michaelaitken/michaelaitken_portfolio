@@ -44,7 +44,7 @@ const Hero = ({}: Props) => {
         <h1 className='text-white text-[100px] uppercase font-extralight leading-[100px]'>Soon!</h1>
       </div>
       
-      <p className='text-[20px] text-gray-400'>This website is currently under construction</p>
+      <p className='text-[20px] text-gray-400'>A new website is currently under construction</p>
 
       <div className='flex flex-col md:flex-row items-center gap-3 mt-10'>
         <h1 className='text-[#FFF] text-[30px]'>AitkenMusic <span className='text-[#FFF]'>is still avaliable: </span></h1>
