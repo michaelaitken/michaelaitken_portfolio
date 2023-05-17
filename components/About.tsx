@@ -3,11 +3,11 @@ import { Roboto } from '@next/font/google';
 import { SkillGrid } from 'components';
 import { techSkills } from '@/constants';
 
-// const roboto = Roboto({
-//   weight: ['100','300','400','700',],
-//   style: ['normal',],
-//   subsets: ['latin'],
-// })
+const roboto = Roboto({
+  weight: ['100','300','400','700',],
+  style: ['normal',],
+  subsets: ['latin'],
+})
 
 type Props = {}
 

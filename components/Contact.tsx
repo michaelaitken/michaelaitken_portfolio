@@ -14,11 +14,11 @@ type Inputs = {
     message: string;
   };
 
-// const roboto = Roboto({
-//     weight: ['100','300','400','700',],
-//     style: ['normal',],
-//     subsets: ['latin'],
-// })
+const roboto = Roboto({
+    weight: ['100','300','400','700',],
+    style: ['normal',],
+    subsets: ['latin'],
+})
 
 const Contact = (props: Props) => {
     const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
