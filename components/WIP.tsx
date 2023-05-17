@@ -62,7 +62,7 @@ const Hero = ({}: Props) => {
               <Image
               src={social.image}
               alt={social.name}
-              className="w-[40px] h-[40px]"
+              className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
               />
             </a>
           ))}
