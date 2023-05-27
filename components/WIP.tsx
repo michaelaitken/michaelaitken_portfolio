@@ -45,7 +45,7 @@ const Hero = ({}: Props) => {
       </div>
       
       <div className='text-center'>
-        <p className='text-[40px] text-purple-400'>It's time for a new coat of paint! 🎨</p>
+        <p className='text-[40px] text-purple-400'>Its time for a new coat of paint! 🎨</p>
         <p className='text-[20px] text-gray-400'>🚧 My new website is currently under construction 🚧</p>
       </div>
       
